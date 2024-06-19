@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class spyNumber {
 public static void main(String[] args) {
 	//spy number
-	//123  1+2+3 6 1*2*3 = 6
+	//for example 123  1+2+3 6 1*2*3 = 6
 	Scanner s = new Scanner(System.in);
 	System.out.println("user please enter a number");
 	int n=s.nextInt();
