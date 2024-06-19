@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class spyNumber {
+public static void main(String[] args) {
+	//spy number
+	//123  1+2+3 6 1*2*3 = 6
+	Scanner s = new Scanner(System.in);
+	System.out.println("user please enter a number");
+	int n=s.nextInt();
+	int sum=0;
+	int mul=1;
+	while(n>0)
+	{
+		int rem = n%10;
+		sum=sum+rem;
+		mul = mul*rem;
+		n=n/10;
+	}
+	if(sum==mul)
+	{
+		System.out.println("spy number");
+	}
+	else
+	{
+		System.out.println("not spy");
+	}
+}
+}
